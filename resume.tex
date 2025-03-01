@@ -1,0 +1,307 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.8in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \large#3 & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Vinayak Thakur } \\ \vspace{1pt}
+     Bengaluru, India \\ \vspace{1pt}
+    \small  \raisebox{-0.1\height}\faPhone\ \underline{+91-9462988266} ~ \raisebox{-0.2\height}\faEnvelope\  \underline{vinayak9thakur@gmail.com} ~ 
+    \href{https://www.linkedin.com/in/vinayakthakur17/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{https://www.linkedin.com/in/vinayakthakur17/}}  ~
+    \vspace{-4pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CMR Institute of Technology, Bengaluru }{ 2021 -- 2025}
+      {Bachelor of Engineering in Computer Science Engineering, CGPA: 8.48}{Bengaluru, India}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Emmanuel Mission School , Bundi }{2012 -- 2020}
+      {Grade: Class X = 91.4\% , Class XII = 91.4\% }{Bundi, India}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{COURSES / CURRICULUM }
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Data Structures \&Algorithms
+                \item Operating System
+                \item DBMS
+                \item Computer Networks
+                \item OOPS
+                \item Version Control
+                \item Web Design
+
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+     \resumeSubheading{Fidrox Technologies\href{https://bizsense.in/}{\raisebox{-0.1\height} } }{Oct 2024 -- Jan 2025}{\underline{Intern}}{Bengaluru}
+      \resumeItemListStart
+        \resumeItem{\normalsize{
+Designed and developed UI dashboards and screens for various access management systems using HTML, CSS, JavaScript, and AdminLTE, ensuring a responsive and user-friendly interface.
+
+ }}
+   \resumeItem{\normalsize{
+ Integrated UI components and interactive elements utilizing Bootstrap, jQuery, Toastr, and jqGrid, enhancing user experience and system accessibility.
+}}
+\resumeItem{\normalsize{
+ Collaborated on UI/UX design improvements, leveraging Figma for prototyping and wireframing, streamlining the design-to-development workflow for seamless implementation.
+
+
+ }}
+   
+      \resumeItemListEnd  
+      \vspace{-1pt}
+    
+       \resumeSubheading{Centre of Excellence(ML), CMR Institute 
+\href{https://weboin.com/}{\raisebox{-0.1\height} } }{Oct 2022 -- Nov 2022}{\underline{Intern}}{Bengaluru}
+      \resumeItemListStart
+        \resumeItem{\normalsize{
+Explored the fundamentals of Machine Learning and Big Data, gaining hands-on experience with Python, Pandas, Matplotlib, and Seaborn for data analysis and visualization.
+
+ }}
+   \resumeItem{\normalsize{
+Worked on link prediction using the NetworkX library, implementing ML techniques to analyze network structures and predict relationships between nodes.
+}}
+  
+\resumeItem{\normalsize{
+Applied clustering algorithms like K-Means and statistical analysis techniques to real-world datasets, documenting findings through detailed report-making and data-driven insights.
+}}
+      \resumeItemListEnd 
+  \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {{\textbf{\large{Virtual Try-On Using Deep Learning}} \href{Project Link}{\raisebox{-0.1\height} }}}{Dec 2024}
+        \resumeItemListStart
+    \resumeItem{\normalsize{Developed a deep learning-based virtual try-on system that transfers clothing onto human models using GMM (Geometric Matching Module) and U-Net-based generators.}}
+    \resumeItem{\normalsize{Utilized pose estimation and TPS warping for accurate cloth alignment, improving try-on quality over existing methods.}}
+    \resumeItem{\normalsize{Trained and fine-tuned models on the VITON dataset, optimizing performance for high-resolution virtual clothing synthesis.}}
+\resumeItemListEnd
+
+          
+      \resumeProjectHeading
+          {{\textbf{\large{Customer Relationship Management}} \href{Project Link}{\raisebox{-0.1\height} }} }{July 2024}
+          \resumeItemListStart
+    \resumeItem{\normalsize{Developed a CRM system to streamline customer data management, assessments, and billing for a cybersecurity company, improving workflow efficiency.}}
+    \resumeItem{\normalsize{Built using Django, SQLite, HTML, CSS, and Bootstrap, ensuring a responsive UI and seamless user experience.}}
+    \resumeItem{\normalsize{Integrated secure authentication and role-based access control, enhancing data protection and user privacy.}}
+\resumeItemListEnd
+
+          
+          \resumeProjectHeading
+      {\href{https://}{\textbf{\large{Ration Shop Management System}} \href{https://}{\raisebox{-0.1\height} }} }{Dec 2023}
+        \resumeItemListStart
+    \resumeItem{\normalsize{Developed a user-friendly inventory and stock control system for ration shops using HTML, CSS, JavaScript, Bootstrap, PHP, and MySQL.}}
+    \resumeItem{\normalsize{Implemented real-time stock tracking and automated inventory updates, improving efficiency in ration distribution.}}
+    \resumeItem{\normalsize{Designed a responsive and intuitive UI, enhancing user experience and accessibility across devices.}}
+\resumeItemListEnd
+
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%
+
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.01in, label={}]
+    \item \small{
+    \begin{tabular}{@{}ll}
+     \textbf{\normalsize{Languages (Programming):}}{{\textbf{}C++, C, Java, Python, SQL, HTML, CSS, JavaScript } \\
+     
+     \textbf{\normalsize{Frameworks:}} {React, Django, Express, Bootstrap } \\
+     \textbf{\normalsize{Operating Systems:}} {Linux, Windows, MacOS} \\
+    \textbf{\normalsize{Tools and Technologies::}} {Git, GitHub, VsCode, NodeJs, Xampp, IntelliJ Idea, Visual Studio Code, MySQL, Figma} \\
+     \textbf{\normalsize{Languages:}} {English, Hindi, German} \\
+    \end{tabular}
+    }
+ \end{itemize}
+
+
+ \vspace{-18pt}
+  %-----------CERTIFICATIONS---------------
+
+%-----------INVOLVEMENT---------------
+\section{POSITIONS OF RESPONSIBILITY}
+\vspace{-1pt}
+
+\noindent \hangindent=1.2cm $\sbullet[.75]$ \textbf{Event Coordinator - Cultura CMRIT}: Organised multiple cultural events at the annual cultural fest. \\
+
+\noindent \hangindent=0.289cm $\sbullet[.75]$ \textbf{Member - TAB Theatre Club}: Secured First Prize in street play competition at BMSCE, showcasing creative expression and teamwork abilities. \\
+
+\noindent \hangindent=0.289cm $\sbullet[.75]$ \textbf{Campus Leadership}: Elected as Class Representative for two consecutive terms during undergraduate studies, demonstrating leadership and accountability. \\
+
+\noindent \hangindent=1.2cm $\sbullet[.75]$ Facilitated promotion of institute's incubation center through strategic information drives and diverse outreach initiatives. \\
+
+
+
+\vspace{-5pt}
+
+            
+
+
+
+ \end{document}
